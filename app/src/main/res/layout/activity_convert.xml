@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20sp"
+    tools:context=".MainActivity"
+    android:id="@+id/main_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="0">
+    <TableRow>
+        <TextView
+            android:text="Số A"
+            android:padding="5dp"
+            android:gravity="center"></TextView>
+        <EditText
+            android:id="@+id/number_a"
+            android:gravity="fill"
+            android:inputType="number"></EditText>
+    </TableRow>
+        <TableRow>
+            <TextView
+                android:padding="5dp"
+                android:text="Số B"
+                android:gravity="center"></TextView>
+            <EditText
+                android:id="@+id/number_b"
+                android:gravity="fill"
+                android:inputType="number"></EditText>
+        </TableRow>
+        <TextView
+            android:id="@+id/kq"
+            android:text="Kết quả hiển thị tại đây"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:gravity="center"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+            android:id="@+id/total_number"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:text="Tổng 2 số"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+                android:layout_marginRight="5dp"></Button>
+            <Button
+                android:id="@+id/diff_number"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:text="Hiệu 2 số"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWarning"
+                android:layout_marginRight="5dp"></Button>
+            <Button
+                android:id="@+id/cal_number"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:text="Tích 2 số"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDark"
+                android:layout_marginRight="5dp"></Button>
+
+            <Button
+                android:id="@+id/trad_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Thương 2 số"
+                android:textColor="#fff"></Button>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_uoc_chung"
+            android:background="@color/colorPrimaryDark"
+            android:text="Ước chung lớn nhất"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"></Button>
+            <Button
+                android:id="@+id/btn_exit"
+                android:background="@color/colorDanger"
+                android:text="THOÁT CHƯƠNG TRÌNH"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"></Button>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
